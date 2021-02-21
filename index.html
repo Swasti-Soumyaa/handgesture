@@ -1,0 +1,79 @@
+ 
+<html>
+  <head>
+    
+    <title>Hand Gesture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    
+  <div class="container">
+  
+    <center>
+      <h3 class="btn btn-success heading">HAND GESTURE
+        <br>
+        <span >&#9996;&#127995;</span>
+        <span >&#128076;&#127995;</span>
+        <span >&#128075;&#127995;</span>
+        <span >&#128077;&#127995;</span>
+        <span >&#128078;&#127995;</span>
+        <span >&#128079;&#127995;</span>
+
+
+
+      </h3>
+      <br><br>
+
+      <p style="font-size: 22px;,color: rgb(233, 89, 156);" style="color: rgb(233, 89, 156);">Take your selfie to generate emoji
+      	<br>
+        <b style="color: rgb(0, 255, 242)">What are you showing?</b>
+        <br>
+        <b style="color: rgb(35, 250, 100)">Let me see</b>
+        <br>
+        
+        <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Webcam- </label>
+        <div id="camera"></div>
+        <br><br>
+        <button id="camera_image" onclick="takeSnapshot()">Capture image</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Prediction 1-</label>
+        <p class="emotion_name" id="emotion1"></p>
+        <p class="emoji" id="emoji1"></p>
+        <label>Prediction 2-</label>
+        <p class="emotion_name" id="emotion2"></p>
+        <p class="emoji" id="emoji2"></p>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot- </label>
+        <div id="result"></div>
+        <br><br>
+        <button id="image">Predict emotion</button>
+      </div>
+    
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
